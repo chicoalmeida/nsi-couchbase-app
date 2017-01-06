@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: nsi-couchbase-poc
+  couchbase:
+      bootstrap-hosts: localhost
+      env:
+        timeouts:
+          connect: 10000
+          socket-connect: 10000
+      bucket:
+        name: default
+
+  data:
+    couchbase:
+      auto-index: true
+      repositories:
+        enabled: true
+server:
+  port: 8080

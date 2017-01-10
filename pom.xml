@@ -39,6 +39,11 @@
     </dependencyManagement>
 
     <dependencies>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.datatype</groupId>
+            <artifactId>jackson-datatype-jsr310</artifactId>
+        </dependency>
         <!--Features to help you monitor and manage the application -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -86,11 +91,7 @@
         </dependency>
 
 
-        <!-- gson -->
-        <dependency>
-            <groupId>com.google.code.gson</groupId>
-            <artifactId>gson</artifactId>
-        </dependency>
+
     </dependencies>
 
     <build>
